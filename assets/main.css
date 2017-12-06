@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"),
+    url(/assets/fonts/Montserrat-MediumItalic.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Montserrat ExtraLight"), local("Montserrat-ExtraLight"),
+    url(/assets/fonts/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url(/assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url(/assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Oleo Script Bold"), local("OleoScript-Bold"),
+    url(/assets/fonts/OleoScript-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a89ce1+0,6ae1ca+100 */
+  background: #a89ce1; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #a89ce1 0%,
+    #6ae1ca 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #a89ce1 0%,
+    #6ae1ca 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a89ce1 0%,
+    #6ae1ca 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#a89ce1",
+      endColorstr="#6ae1ca",
+      GradientType=1
+    ); /* IE6-9 */
+  font-size: 21px;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+div.index {
+  text-align: center;
+  padding: 1em;
+}
+
+div.index h1,
+div.index a {
+  color: white;
+}
+
+div.index p {
+  font-weight: 300;
+}
+
+div.index .links {
+  margin-top: 6em;
+}
+
+div.index .links a {
+  font-size: 1.5em;
+  text-decoration: none;
+  border: 5px solid white;
+  padding: 0 8px;
+}
+
+div.index .links a:first-child {
+  margin-right: 300px;
+}
+
+body.student {
+  background: #6ae1ca;
+}
+
+body.parent {
+  background: #a89ce1;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 0.5px solid white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  position: absolute;
+  width: 300px;
+  padding: 30px;
+}
+
+nav li {
+  list-style: none;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 0.5px solid black;
+}
+
+nav li.active a {
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid white;
+  font-size: 1.2em;
+}
+
+article {
+  position: absolute;
+  margin-left: 300px;
+  padding-left: 4em;
+  padding-top: 0.5em;
+  padding-bottom: 3em;
+  min-height: 100%;
+  border-left: 0.5px solid white;
+}
+
+article h1 {
+  color: #341648;
+  text-transform: uppercase;
+}
+
+body.student article h1 {
+  color: #164646;
+}
+
+article h2 {
+  font-weight: 300;
+  margin-bottom: 0.4em;
+}
+
+article blockquote {
+  color: #341648;
+  font-family: "Oleo Script", cursive;
+  font-size: 2.3em;
+  font-weight: 700;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 800px;
+  margin: 0;
+  margin-bottom: 1em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+body.student article blockquote {
+  color: #164646;
+}
+
+article a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 0.5px solid black;
+}
+
+article p {
+  max-width: 600px;
+  font-weight: 300;
+}
+
+article li {
+  font-weight: 300;
+  list-style: none;
+}
+
+article p.indent {
+  text-indent: 2em;
+}
+
+article.wide p {
+  max-width: 800px;
+  text-indent: 0;
+}
