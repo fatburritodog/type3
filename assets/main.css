@@ -74,25 +74,31 @@ div.index .links a {
   font-size: 1.5em;
   text-decoration: none;
   border: 5px solid white;
-  padding: 0 8px;
+  font-weight: bold;
+  padding: 6px;
+  padding-bottom: 4px;
 }
 
 div.index .links a:first-child {
   margin-right: 300px;
 }
 
+body.parent,
 body.student {
+  background: white;
+}
+
+body.student header {
   background: #6ae1ca;
 }
 
-body.parent {
+body.parent header {
   background: #a89ce1;
 }
 
 header {
   height: 80px;
   line-height: 80px;
-  border-bottom: 0.5px solid white;
   font-size: 24px;
   font-weight: bold;
   padding-left: 30px;
@@ -131,10 +137,14 @@ nav li a {
 }
 
 nav li.active a {
-  color: white;
+  color: #a89ce1;
   text-transform: uppercase;
-  border-bottom: 0.5px solid white;
-  font-size: 1.2em;
+  border-bottom: 0.5px solid #a89ce1;
+}
+
+body.student nav li.active a {
+  color: #6ae1ca;
+  border-color: #6ae1ca;
 }
 
 article {
@@ -144,11 +154,19 @@ article {
   padding-top: 0.5em;
   padding-bottom: 3em;
   min-height: 100%;
-  border-left: 0.5px solid white;
+  border-left: 1px solid white;
+}
+
+body.parent article {
+  border-color: #a89ce1;
+}
+
+body.student article {
+  border-color: #6ae1ca;
 }
 
 article img {
-  max-width: 800px;
+  max-width: 700px;
 }
 
 article h1 {
@@ -165,24 +183,6 @@ article h2 {
   margin-bottom: 0.4em;
 }
 
-article blockquote {
-  color: #341648;
-  font-family: "Oleo Script", cursive;
-  font-size: 2.3em;
-  font-weight: 700;
-  padding-left: 1em;
-  padding-right: 1em;
-  max-width: 800px;
-  margin: 0;
-  margin-bottom: 1em;
-  line-height: 1.6em;
-  text-align: center;
-}
-
-body.student article blockquote {
-  color: #164646;
-}
-
 article a {
   color: black;
   text-decoration: none;
@@ -190,7 +190,7 @@ article a {
 }
 
 article p {
-  max-width: 600px;
+  max-width: 700px;
   font-weight: 300;
 }
 
@@ -203,7 +203,6 @@ article p.indent {
   text-indent: 2em;
 }
 
-article.wide p {
-  max-width: 800px;
-  text-indent: 0;
+article ul {
+  max-width: 700px;
 }
